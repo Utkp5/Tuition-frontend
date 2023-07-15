@@ -1,9 +1,15 @@
+import React from "react"
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom"
+import Home from "./Components/Home/Home";
+
 function App() {
 
   return (
-    <>
-    <p className="bg-pink-500 text-[100px]">Hello ji</p>
-    </>
+    <Router>
+         <Routes>
+             <Route exact path="/" element={<Home />} />
+         </Routes>
+    </Router>
   )
 }
 
