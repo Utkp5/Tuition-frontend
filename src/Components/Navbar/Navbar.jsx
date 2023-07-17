@@ -33,8 +33,8 @@ function Navbar() {
         {/*mobile responsive*/}
         <div className= {`${toggle ? 'left-[0]' : 'left-[100%]'} duration-300 py-8 mx-6 w-full h-full lg:hidden block fixed flex-col bg-black z-[1] top-[66px] text-white`}>
           <ul className="">             
-             <li className="text-xl p-1 py-4 ml-4 mr-4"><NavLink to="/">TUITION</NavLink></li>
-             <hr />
+             <li className="text-xl p-1 py-4 ml-4 mr-4 font-bold"><NavLink to="/">TUITION</NavLink></li>
+             <hr className="mb-4"/>
              <li className="text-xl p-1 py-4 ml-4 mr-4"><NavLink to="/">Home</NavLink></li>
              <li className="text-xl p-1 py-4 ml-4 mr-4"><NavLink to="/About">About Us</NavLink></li>
              <li className="text-xl p-1 py-4 ml-4 mr-4"><NavLink to="/Contact">Contact Us</NavLink></li>
