@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineDown } from "react-icons/ai";
 import { RxCross2 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
 
@@ -22,11 +23,17 @@ function Navbar() {
 
         <div className="mx-6 lg:block sm:hidden">
           <ul className="flex flex-row ">
-             <li className="text-xl p-1 mr-4 "><NavLink to="/">Home</NavLink></li>
+             <li className="text-xl p-1 ml-4 mr-4 "><NavLink to="/">Home</NavLink></li>
              <li className="text-xl p-1 ml-4 mr-4"><NavLink to="/About">About Us</NavLink></li>
              <li className="text-xl p-1 ml-4 mr-4"><NavLink to="/Contact">Contact Us</NavLink></li>
              <li className="text-xl p-1 ml-4 mr-4"><NavLink to="/Admission_letter">Admission letter </NavLink></li>
-             <li className="text-xl p-1 ml-4 mr-4"><NavLink to="/Login_Register">Login/Register </NavLink></li>
+             <li className="text-xl p-1 ml-4 mr-4 "><NavLink>Login/Register &nbsp;<AiOutlineDown className="inline"/></NavLink>
+               <ul className="fixed bg-slate-600 py-4 px-4 w-[160px] top-16">
+                 <li>student</li>
+                 <li>teacher</li>
+               </ul>
+             </li>
+
           </ul>
         </div>
 
@@ -38,7 +45,7 @@ function Navbar() {
              <li className="text-xl p-1 py-4 ml-4 mr-4"><NavLink to="/">Home</NavLink></li>
              <li className="text-xl p-1 py-4 ml-4 mr-4"><NavLink to="/About">About Us</NavLink></li>
              <li className="text-xl p-1 py-4 ml-4 mr-4"><NavLink to="/Contact">Contact Us</NavLink></li>
-             <li className="text-xl p-1 py-4 ml-4 mr-4"><NavLink to="/Admission_letter">Admission letter </NavLink></li>
+             <li className="text-xl p-1 py-4 ml-4 mr-4"><NavLink to="/Admission_letter">Admission letter </NavLink></li>             
              <li className="text-xl p-1 py-4 ml-4 mr-4"><NavLink to="/Login_Register">Login/Register </NavLink></li>
           </ul>
         </div>
