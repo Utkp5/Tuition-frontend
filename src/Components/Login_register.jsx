@@ -1,10 +1,11 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 function Login_register() {
   return (
-    <div>
-      Login_register
-    </div>
+    <>
+      <Navbar />
+    </>
   )
 }
 

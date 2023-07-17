@@ -1,10 +1,11 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 function Admission_letter() {
   return (
-    <div>
-       Admission_letter
-    </div>
+    <>
+       <Navbar />
+    </>
   )
 }
 
